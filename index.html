@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'un photographe professionnel. Découvrez des photos uniques et contactez pour vos projets.">
+    <title>Portfolio Photographe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hammersmith+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/JUST ENOUGH.svg" alt="Logo 'JUST ENOUGH'">
+            <ul>
+                <li>À propos</li>
+                <li>Galerie</li>
+                <li>Contact</li>
+                <img src="img/burger.svg" alt="Icon menu burger">
+            </ul>
+        </nav>
+        <div><button class="borderBlack">Contactez-moi <img src="img/Vector.svg" alt=""></button></div>
+    </header>
+
+    <main>
+        <section id="firstSection">
+            <h1>Portefolio de Franck Hung</h1>
+            <p>Capturer l'instant, révéler l'émotion</p>
+        </section>
+
+        <section id="secondSection">
+            <h2>Mes réalisations</h2>
+            <section>
+                <article>
+                    <img src="img/paysageMontagneux.webp" alt="Paysage montagneux" class="borderBlack">
+                    <h3>09/15/2021</h3>
+                </article>
+                <article>
+                    <img src="img/pexels-bri-schneiter-28802-346529.webp" alt="Grand lac" class="borderBlack">
+                    <h3>07/05/2020</h3>
+                </article>
+                <article>
+                    <img src="img/pexels-dreamypixel-552785.webp" alt="Paysage montagneux" class="borderBlack">
+                    <h3>17/25/2020</h3>
+                </article>
+            </section>
+        </section>
+
+        <section id="thirdSection">
+            <section>
+                <img src="img/quotes 1.svg" alt="">
+                <p>Je suis Franck Hung, photographe passionné par l'art de capturer des moments uniques. La photographie est pour moi une façon de raconter des histoires et de saisir l'émotion dans chaque image.</p>
+            </section>
+            <img src="img/portrait.webp" alt="photo de Franck Hung">
+        </section>
+
+        <section id="fourthSection"></section>
+
+        <section id="contact" class="borderBlack">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" class="borderBlack" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="borderBlack" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" class="borderBlack" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Franck Hung. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

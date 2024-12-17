@@ -1,0 +1,259 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+}
+
+.borderBlack{
+    border: solid 1px;
+}
+
+header {
+    background-color: rgb(246, 246, 246);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 30px;
+    gap: 50px;
+}
+
+header nav{
+    display: flex;
+    gap: 50px;
+}
+
+header nav ul img{
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li{
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    color: #7d7d7d;
+}
+
+header div{
+    /*border: solid 1px;*/
+    display: flex;
+    justify-content: end;
+}
+
+header div button{
+    all: unset;
+    display: flex;
+    background-color: white;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 16px;
+    gap: 10px;
+    transition: gap 0.3s ease;
+    cursor: pointer;
+}
+
+header div button:hover{
+    gap: 20px;
+}
+
+/* Premiere section*/
+#firstSection{
+    background-image: url(img/LandingPage.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    padding-top: 400px;
+    padding-bottom: 120px;
+}
+
+/* Deuxieme section REALISATION */
+#secondSection{
+    padding-inline: 100px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 10px;
+}
+
+#secondSection section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#secondSection section article img{
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    /*filter: grayscale(100%);*/
+}
+
+#secondSection section article h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*  Troisième section */
+#thirdSection{
+    display: grid;
+    margin-inline: 120px;
+    padding: 50px;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 40px;
+    border: dashed 1px;
+}
+
+#thirdSection > img{
+    object-fit: fill;
+    width: 100%;
+}
+
+#thirdSection section{
+    display: grid;
+    gap: 20px;
+}
+
+#thirdSection section p {
+    width: 90%;
+    font-size: 22px;
+}
+
+/* QUATRIEME SECTION */
+#fourthSection{
+    background-image: url(img/pexels-dreamypixel-552785.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px;
+    margin-block: 100px;
+    filter: grayscale(70%);
+}
+
+/* Formulaire */
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#contact form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contact form button {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background: #0e0e0f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #242424;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 390px) {
+    header nav ul li, header div button{
+        display: none;
+    }
+
+    header nav ul img{
+        display: block;
+        left: 0;
+        padding-left: 100px;
+    }
+
+    /* Premiere section */
+    #firstSection{
+        padding-top: 200px;
+    }
+
+    /* Deuxieme section */
+    #secondSection{
+        padding-inline: 40px;
+    }
+
+    #secondSection section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Troisième section */
+    #thirdSection{
+        margin-inline: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    #thirdSection section p{
+        font-size: 18px;
+    }
+
+    /* Quatrième section */
+    #fourthSection{
+        width: 390px;
+        padding: 0;
+        padding-block: 300px;
+    }
+
+    /* Dernier section formulaire */
+    #contact{
+        margin-inline: 40px;
+    }
+}
